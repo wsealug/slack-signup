@@ -14,6 +14,7 @@ html
             strong #{community}
           h2 #{__('HEADER', community)}
         .content
+          img(src="images/logo.jpeg", class="logo")
           .information
             form(method="POST", action="/invite")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
